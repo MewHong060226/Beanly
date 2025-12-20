@@ -1,0 +1,250 @@
+/* ===============================
+   RESET（只影响本页）
+================================ */
+.product-page * {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f3e8;
+  font-family: serif;
+  color: #2e2e2e;
+}
+.section2{
+  padding-top: 0;
+}
+
+.footer{
+  margin-top: 140px
+}
+
+/* ===============================
+   PRODUCT PAGE
+================================ */
+.product-page {
+  padding: 43px;
+  position: relative;
+  align-items: flex-center;
+  
+  
+  
+  
+}
+
+/* 🔧 返回按钮（共用，不用改） */
+.back-btn {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #cbb9a2;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.product-wrapper {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* ===============================
+   IMAGE
+================================ */
+.product-image img {
+  width: 360px;
+  max-width: 100%;
+  display: block;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* ===============================
+   INFO
+================================ */
+.product-info {
+  border-radius: 10px 10px 10px 10px;
+  max-width: 420px;
+}
+
+.product-info h1 {
+  font-size: 42px;
+  margin-bottom: 9px;
+}
+
+/* 🔧 每个饮料会改 */
+.price {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.tag {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.desc {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+/* ===============================
+   OPTIONS
+================================ */
+.option-group {
+  margin-bottom: 20px;
+}
+
+.option-group h4 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* 所有选项按钮统一 */
+.option-btn {
+   font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  padding: 8px 32px;
+  border-radius: 20px;
+  border: none;
+  background: #e9e9e9;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* hover 只是轻微变深 */
+.option-btn:hover {
+  background: var(--lightyellow);
+}
+
+/* 选中状态 */
+.option-btn.active {
+  background: #b8a38b;
+  color: #ffffff;
+}
+
+/* ===============================
+   NOTE INPUT
+================================ */
+textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 12px;
+  border: none;
+  padding: 12px;
+  margin: 20px 0;
+  font-family: inherit;
+}
+
+/* ===============================
+   ADD TO CART
+================================ */
+.add-cart2 {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 8px;
+  border-radius: 30px;
+  border: none;
+  background: #7f8f85;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-cart2:hover {
+  background: #5a6f62;
+}
+
+/* ===============================
+   RELATED PRODUCTS
+================================ */
+.related {
+  background: #e6ded6;
+  padding: 60px;
+  margin-top: 80px;
+}
+
+.related h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.card-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+
+.product-container {
+  max-width: 1119px;
+  margin: 0 auto;
+}
+
+
+
+
+/* ===============================
+   TABLET
+================================ */
+@media (max-width: 991px) {
+  .product-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .product-page {
+    padding: 40px;
+  }
+
+  .card-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===============================
+   PHONE
+================================ */
+@media (max-width: 767px) {
+  .product-page {
+    padding: 20px;
+  }
+
+  .product-info h1 {
+    font-size: 28px;
+  }
+
+  .product-image img {
+    width: 100%;
+  }
+
+  .card-wrap {
+    grid-template-columns: 1fr;
+  }
+}

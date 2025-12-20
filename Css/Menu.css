@@ -1,0 +1,259 @@
+/* =====================
+   MENU SECTION
+===================== */
+.menu-section {
+  padding: 70px 0;
+  background-color: var(--background);
+}
+
+/* =====================
+   MENU CARD
+===================== */
+.menu-card {
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 统一图片高度（重点） */
+.menu-card img {
+  width: 104%;
+  height: 220px;          /* ✅ 统一高度 */
+  object-fit: contain;   /* ✅ 不裁切饮料 */
+  background: #fff;      /* 防止透明图很怪 */
+}
+
+/* =====================
+   MENU INFO
+===================== */
+.menu-info {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-info h5 {
+  font-family: 'PlayFair', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* =====================
+   ACTIONS
+===================== */
+.menu-actions {
+  margin-top: auto;              /* ✅ 推到卡片底部 */
+  display: flex;
+  justify-content: flex-end;     /* ✅ 靠右 */
+}
+
+/* Customize */
+customize {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  color: #a08b6c;
+  cursor: pointer;
+}
+
+
+
+/* View Details 按钮 */
+.product-add {
+  padding: 6px 18px;
+  border-radius: 20px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.product-add:hover {
+  background-color: var(--darkprimary);
+}
+/* Add to Cart */
+.add-cart {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--dark);
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Hover（只加一点点，不花俏） */
+.add-cart:hover {
+  background-color: var(--darkprimary);
+}
+
+
+
+/* =====================
+   TOP BAR (Back + Filter)
+===================== */
+.menu-top-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 70px 0 70px 63px; /* 保留你原本的节奏 */
+}
+
+/* Back Home Button */
+.back-home {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--darkyellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.back-home:hover {
+  background: #9b8669;
+}
+
+
+
+/* =====================
+   Menu Filter Button
+   简单、干净、只变深
+===================== */
+.filter-button{
+  padding-left: 63px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  
+  
+  
+}
+
+.btn-outline-dark {
+  color: #ffffff;
+  background-color: var(--darkyellow);
+  border-color:  var(--darkyellow);
+  border-radius: 22px;
+  padding: 8px 40px;
+  font-size: 1.3rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* hover：颜色变深 */
+.btn-outline-dark:hover {
+  background: #9b8669;;
+  color: #fff;
+}
+
+/* focus / click 不乱跳 */
+.btn-outline-dark:focus,
+.btn-outline-dark:active {
+  box-shadow: none;
+}
+
+/* =====================
+   Menu Filter Style
+===================== */
+
+.menu-filter .offcanvas-body {
+  padding: 10px;
+  background: #f6f4ec;
+}
+
+/* 每一组 */
+.filter-group {
+  margin-bottom: 24px;
+}
+
+/* 标题色块 */
+.filter-title {
+  background: #8e9a90;
+  color: #fff;
+  padding: 16px 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 箭头（只是装饰） */
+.filter-title .arrow {
+  font-size: 1rem;
+}
+
+/* 选项区 */
+.filter-item {
+  display: block;
+  font-family: "PlayFair", sans-serif;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  color: var(--dark);
+  background: #f6f4ec;
+}
+
+/* checkbox 简化 */
+.filter-item input {
+  margin-right: 10px;
+}
+
+/* Apply 按钮 */
+.apply-filter {
+  margin: 9px 20px;
+  border-radius: 30px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-family: "poppins", sans-serif;
+}
+
+.apply-filter:hover {
+  background: var(--darkprimary);
+  color: #ffff;
+}
+
+
+/* =====================
+   PAGINATION STYLE
+===================== */
+.menu-pagination {
+  padding-top: 70px ;
+  padding-bottom: 140px ;
+}
+
+.pagination .page-link {
+  border: none;
+  color: #6b6b6b;
+  padding: 10px 16px ;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+.pagination .page-item.active .page-link {
+  background: var(--darkyellow);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.pagination .page-link:hover {
+  background: rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.pagination .disabled .page-link {
+  opacity: 0.4;
+}
+
+
+
+

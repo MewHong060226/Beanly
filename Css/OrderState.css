@@ -1,0 +1,106 @@
+body{
+  margin:0;
+  background:#f6f4ec;
+  font-family: 'Playfair Display', serif;
+  color:#4b4b3a;
+}
+
+.order-wrapper{
+  max-width:900px;
+  margin:auto;
+  padding:70px 16px;
+  text-align:center;
+}
+
+h1{
+  font-size:2.6rem;
+  margin-bottom:30px;
+}
+
+/* progress bar */
+.progress-bar{
+  height:10px;
+  background:#d6cebf;
+  border-radius:20px;
+  overflow:hidden;
+  margin-bottom:80px;
+}
+
+.progress-fill{
+  height:100%;
+  width:20%;
+  background:#b9a98c;
+  transition:1.2s ease;
+}
+
+/* visual */
+.state-visual{
+  margin-bottom:60px;
+}
+
+.arch{
+  width:260px;
+  height:269px;
+  margin:auto;
+  background:#e0d8cf;
+  border-radius:130px 130px 10px 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.arch i{
+  font-size:64px;
+}
+
+.state-label{
+  margin-top:0;
+  padding:16px 160px;
+  background:#b9a98c;
+  color:#fff;
+  border-radius:30px;
+  display:inline-block;
+  font-size:1.1rem;
+}
+
+/* steps */
+.steps{
+  margin-top:40px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.step{
+  opacity:0.4;
+  font-size:0.95rem;
+  transition:0.4s;
+}
+
+.step.active{
+  opacity:1;
+  font-weight:600;
+}
+
+/* back */
+.back-btn{
+  display:inline-block;
+  margin-top:0;
+  padding:14px 40px;
+  border-radius:30px;
+  background:#4b4b3a;
+  color:#fff;
+  text-decoration:none;
+  opacity:0;
+  pointer-events:none;
+  transition:0.4s;
+}
+
+.back-btn.show{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.back-btn:hover{
+  background:#2f2f25;
+}

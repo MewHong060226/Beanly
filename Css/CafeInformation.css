@@ -1,0 +1,187 @@
+
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f3e8;
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+
+
+.back-btn1 {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background:  var(--darkyellow);
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  z-index: 3;
+}
+
+
+
+
+
+/* ===== HERO ===== */
+.cafe-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 420px;            /* 防止太矮 */
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;        /* 字永远在图内底部 */
+  padding: 40px;
+}
+
+/* Hero image */
+.cafe-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* dark overlay */
+.cafe-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0.1,0.15)
+  );
+  z-index: 1;
+}
+
+/* Text overlay */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 90%;
+}
+
+/* Title */
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* ===== INFO ===== */
+.cafe-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px;
+}
+
+
+.info-left p {
+  margin-bottom: 16px;
+}
+
+.location {
+  font-weight: bold;
+}
+
+/* ===== RESERVATION BUTTON (UNIFIED STYLE) ===== */
+.reserve-btn {
+   font-family: "Poppins", sans-serif;
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover：只变深一点，很克制 */
+.reserve-btn:hover {
+  background:  var(--darkprimary);
+  transform: translateY(-1px);
+}
+
+/* Active：按下去的感觉 */
+.reserve-btn:active {
+  transform: translateY(0);
+}
+
+
+
+/* ===== DESCRIPTION ===== */
+.cafe-desc {
+  padding: 0 60px 60px;
+  max-width: 800px;
+}
+
+/* ===== MAP ===== */
+.map-section {
+  padding: 0 60px 60px;
+}
+
+.map-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+
+
+/* ===== TABLET ===== */
+@media (max-width: 991px) {
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .cafe-info,
+  .cafe-desc,
+  .map-section {
+    padding: 40px;
+  }
+}
+
+/* ===== PHONE ===== */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .cafe-info {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .cafe-desc,
+  .map-section {
+    padding: 20px;
+  }
+}

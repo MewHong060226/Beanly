@@ -1,0 +1,690 @@
+:root {
+  /* ===== COLOR ===== */
+  --primary: #7d8d86;
+  --darkprimary: #5f756c;
+  --dark: #3e3f29;
+  --background: #f1f0e4;
+  --darkyellow: #BCA88D;
+  --lightyellow: #D9CFC7;
+
+  /* ===== SPACING ===== */
+  --nav-section-gap: 70px;
+  --section-footer-gap: 140px;
+
+  /* ===== FONT ===== */
+  --h1-size: 3rem;
+  --h2-size: 2.2rem;
+  --p-size: 1rem;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: "PlayFair", sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+ 
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+p {
+  font-size: var(--p-size);
+}
+
+
+body{
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+}
+/* ===== GLOBAL HOVER EFFECT ===== */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+
+
+.glide_2 {
+    width: 100%;
+    background-color: var(--dark);
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.glide_2 .glide__slides {
+    margin: 0;
+    padding: 0;
+}
+
+.glide_2 .glide__slide {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--background);
+     white-space: nowrap;
+      padding: 0.5rem 16rem;
+}
+
+
+
+.navbar {
+    background-color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+}
+.navbar .navbar-brand,
+.navbar .navbar-nav {
+  white-space: nowrap; /* 不允许断行 */
+}
+
+
+/* ===== FOOTER BASE ===== */
+.footer {
+  background-color: var(--primary);
+  color: #fff;
+    
+  
+}
+
+/* description text */
+.footer-desc {
+  max-width: 420px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* links */
+.footer-left {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer-left a:hover {
+  opacity: 0.7;
+}
+
+/* ===== BUTTON（重点） ===== */
+.footer-btn {
+  background-color: var(--darkprimary); /* ← 你自己的颜色 */
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.footer-btn:hover {
+  background-color: var(--dark);
+ 
+}
+
+/* divider */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* social icons */
+.icon-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.icon-social img {
+  width: 22px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.icon-social img:hover {
+  opacity: 1;
+}
+
+/* ===== MOBILE ADJUST ===== */
+@media (max-width: 767px) {
+  .footer-left {
+    justify-content: center;
+  }
+
+  .footer-btn {
+    align-self: center;
+  }
+}
+
+
+
+
+.form-label{
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.text-hero-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    color: #ffff;
+}
+
+
+
+.carousel-item img {
+ 
+  object-fit: cover;
+}
+
+
+
+.hero-viewmore {
+  position: absolute;
+  
+
+
+  font-family: "Playfair", serif;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+
+  padding: 8px 18px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+
+  z-index: 10;   /* 👈 防止被图片盖住 */
+  transition: all 0.3s ease;
+}
+
+.hero-viewmore:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateX(4px);
+}
+
+
+
+
+
+
+
+
+/* ===== INLINE ARROW LINK ===== */
+.section-link {
+  margin-bottom: 20px;
+}
+
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+    font-family: "PlayFair", sans-serif;
+  font-size: 32px;
+  color: #2e2e2e;
+  transition: color 0.3s ease;
+}
+
+.inline-link .arrow {
+  
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.inline-link:hover {
+  color: #000;
+}
+
+.inline-link:hover .arrow {
+  transform: translateX(6px); /* 👉 向右 */
+}
+
+
+
+
+
+
+
+
+/* ===== Section 2 : Product Preview ===== */
+.section2 {
+    background-color: var(--lightyellow);
+    margin-top: 70px;
+  padding: 10px;
+}
+.section2 .product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section2 .info {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.3s ease;
+}
+
+.section2 .info:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.section2 img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.section2 .card p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+    
+
+
+
+
+
+
+
+
+
+.section3 {
+   padding-top: var(--nav-section-gap);
+  background: var(--background);
+   
+    
+}
+
+.section3 img {
+    
+    width: 100%;
+    height: 563px;
+    object-fit: cover;
+    transition: 0.4s ease;
+     border-radius: 240px 240px 10px 10px;
+}
+
+/* image hover wrapper */
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+
+/* dark overlay */
+.wrapper::before {
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 100%;
+    left: 0;
+    transition: top 0.5s ease;
+    border-radius: 240px 240px 10px 10px;
+  
+    
+    
+}
+
+/* text */
+.text-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    transition: top 0.5s ease;
+    
+}
+
+/* hover effect */
+.wrapper:hover::before {
+    top: 0;
+  
+}
+
+.wrapper:hover .text-wrapper {
+    top: 50%;
+}
+
+.reservation-section {
+ margin-bottom: var(--section-footer-gap);
+}
+
+
+
+
+
+/* =====================
+   CART OFFCANVAS
+===================== */
+.cart-offcanvas {
+  background: #f5f3e8;
+  width: 380px;
+}
+
+.cart-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+/* =====================
+   CART ITEM
+===================== */
+.cart-item {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #c9bfae;
+  align-items: flex-start;
+}
+
+.cart-img {
+  width: 90px;
+  height: 120px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-top h5 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.price {
+  font-size: 1.1rem;
+}
+
+.option {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 4px 0 10px;
+}
+
+/* =====================
+   ACTIONS
+===================== */
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  border: 1px solid #b8ad9b;
+  border-radius: 20px;
+}
+
+.qty button {
+  background: none;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.qty span {
+  padding: 0 8px;
+}
+
+/* 🗑 Delete */
+.delete {
+  background: none;
+  border: none;
+  color: #a55;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.delete:hover {
+  color: #722;
+}
+
+/* =====================
+   CHECKOUT
+===================== */
+.checkout-wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.checkout-btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background: var(--darkprimary);
+}
+
+
+
+/* 统一每张菜单卡片图片的展示区域 */
+.menu-card img {
+  width: 100%;
+  height: 240px;          /* 你可以改成 200 / 240 */
+  object-fit: cover;   /* 保留完整饮料，不裁切 */
+  background: #fff;      /* 避免透明图看起来怪 */
+}
+
+.whole-section{
+    background-color: var(--background)
+    
+    
+    
+}
+.product-info{
+    background-color: #ffff;
+    padding: 20px;
+    
+    
+}
+
+
+.product-customize,
+.product-add {
+  transition: all 0.25s ease;
+}
+
+
+.product-customize {
+    
+  color: var(--darkyellow);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.product-customize:hover {
+  color: var(--darkyellow);              /* 主题色 */
+  text-decoration: underline; /* 很安全 */
+}
+
+
+
+.product-add {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.product-add:hover {
+  background: var(--darkprimary);   /* 深一点 */
+}
+
+.menu-actions {
+  display: flex;
+  justify-content: space-between; /* ← 核心 */
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/* ===== Reservation Modal ===== */
+
+/* modal */
+.reservation-modal {
+  border-radius: 0;
+  background: #e2d9d0;
+}
+
+/* image header */
+.reservation-hero {
+  height: 240px;
+  width: 100%;
+  background-image: url("../image/Cafe/Cafe_1.jpg"); /* 重要：路径 */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.reservation-hero h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* text */
+.intro-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* button */
+.submit-btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  border: none;
+}
+
+.submit-btn:hover {
+  background:var(--darkprimary);
+}
+
+
+@media (max-width: 767px) {
+  .section3 .row {
+    row-gap: 24px;   /* 👈 中间空隙 */
+  }
+
+  .section3 img {
+    height: 360px;   /* 👈 mobile 不要 563px 太高 */
+  }
+}
+
+
+
+
+
+@media (max-width: 991px) {
+  :root {
+    --nav-section-gap: 50px;
+    --section-footer-gap: 100px;
+
+    --h1-size: 2.4rem;
+    --h2-size: 1.8rem;
+    --p-size: 0.95rem;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --nav-section-gap: 40px;
+    --section-footer-gap: 80px;
+
+    --h1-size: 2rem;
+    --h2-size: 1.5rem;
+    --p-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .cart-offcanvas {
+    width: 320px;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  
+    .desktop-hidden {
+        display: none;
+    }
+    .glide_2 {
+        padding: 18px;
+    }
+
+    .glide_2 .glide__slide {
+        font-size: 0.85rem;
+    }
+    .section-padding {
+        
+        padding-top: 50px
+        
+    }
+}
+/* ===== MOBILE SAFE ===== */
+@media (max-width: 767px) {
+  .inline-link {
+    font-size: 25px;
+  }
+}
