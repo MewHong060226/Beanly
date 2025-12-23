@@ -117,13 +117,13 @@ body {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover：只变深一点，很克制 */
+
 .reserve-btn:hover {
   background:  var(--darkprimary);
-  transform: translateY(-1px);
+  
 }
 
-/* Active：按下去的感觉 */
+
 .reserve-btn:active {
   transform: translateY(0);
 }
@@ -185,3 +185,4 @@ body {
     padding: 20px;
   }
 }
+
